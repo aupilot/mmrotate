@@ -1,0 +1,28 @@
+{
+  "nproc": 10,
+  "img_dirs": [
+    "/Volumes/Datasets/MAFAT/converted/images/"
+  ],
+  "ann_dirs": [
+    "/Volumes/Datasets/MAFAT/converted/labelTxt/"
+  ],
+  "sizes": [
+    1024
+  ],
+  "gaps": [
+    200
+  ],
+  "rates": [
+    1.0
+  ],
+  "img_rate_thr": 0.6,
+  "iof_thr": 0.7,
+  "no_padding": false,
+  "padding_value": [
+    116,
+    116,
+    116
+  ],
+  "save_dir": "/Volumes/Datasets/MAFAT.cropped",
+  "save_ext": ".png"
+}

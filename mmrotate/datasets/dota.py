@@ -102,7 +102,11 @@ class DOTADataset(CustomDataset):
                         except:  # noqa: E722
                             continue
                         cls_name = bbox_info[8]
-                        difficulty = int(bbox_info[9])
+                        # ==kir
+                        try:
+                            difficulty = int(bbox_info[9])
+                        except:
+                            difficulty = 0
                         label = cls_map[cls_name]
                         if difficulty > self.difficulty:
                             pass

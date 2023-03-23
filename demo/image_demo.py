@@ -38,8 +38,13 @@ def main(args):
         palette=args.palette,
         score_thr=args.score_thr,
         out_file=args.out_file)
+    print("")
 
 
 if __name__ == '__main__':
+    # import mmcv
+    # img = mmcv.imread("demo/demo.jpg")
+
+
     args = parse_args()
     main(args)

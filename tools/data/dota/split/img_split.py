@@ -479,7 +479,7 @@ def _load_dota_single(imgfile, img_dir, ann_dir):
         dict: Content of single image.
     """
     img_id, ext = osp.splitext(imgfile)
-    if ext not in ['.jpg', '.JPG', '.png', '.tif', '.bmp']:
+    if ext not in ['.jpg', '.JPG', '.png', '.tif', '.bmp', '.tiff']:
         return None
 
     imgpath = osp.join(img_dir, imgfile)
